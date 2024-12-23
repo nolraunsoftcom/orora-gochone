@@ -18,7 +18,7 @@ import notifee, {EventType} from '@notifee/react-native';
 
 const baseUrl = 'https://witdeal-002.members.markets';
 const andoridId = 'com.orora.sinsungapt';
-const iosId = 'id6738602841';
+const iosId = '6739556274';
 
 export default function App() {
   const myWebWiew = useRef();
@@ -129,7 +129,7 @@ export default function App() {
             if (res.isNeeded) {
               const anurl =
                 'https://play.google.com/store/apps/details?id=' + andoridId;
-              const iosurl = 'https://apps.apple.com/us/app/' + iosId;
+              const iosurl = 'https://apps.apple.com/us/app/id' + iosId;
 
               const gourl = Platform.OS === 'android' ? anurl : iosurl;
 

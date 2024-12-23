@@ -35,10 +35,19 @@ keytool -genkey -v -keystore orora.keystore -alias orora -keyalg RSA -keysize 20
 ---
 
 윗딜브로스 모바일웹
-https://witdeal-bros.members.markets
+https://witdeal-bros.members.markets/app/set/privacy.php
+https://witdeal-bros.members.markets/app/set/set.php
 
 윗딜셀러 모바일웹
-https://witdeal-seller.members.markets
+https://witdeal-seller.members.markets/app/set/privacy.php
+https://witdeal-seller.members.markets/app/set/set.php
 
 윗딜영통신성 모바일웹
 https://witdeal-002.members.markets
+https://witdeal-002.members.markets/app/set/privacy.php
+https://witdeal-002.members.markets/app/set/set.php
+
+태성
+김
+ororapf@naver.com
++82-1661-0339
