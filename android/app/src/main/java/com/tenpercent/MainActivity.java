@@ -1,4 +1,4 @@
-package com.orora.sinsungapt;
+package com.orora.sinnamu;
 
 
 import android.os.Bundle;

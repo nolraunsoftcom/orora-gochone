@@ -24,6 +24,14 @@
 
 ```
 keytool -genkey -v -keystore orora.keystore -alias orora -keyalg RSA -keysize 2048 -validity 10000
+
+keytool -exportcert -alias androiddebugkey -keystore ./android/app/debug.keystore -storepass android -keypass android | openssl sha1 -binary | openssl base64
+keytool -exportcert -alias androiddebugkey -keystore ./android/app/debug.keystore | openssl sha1 -binary | openssl base64
+keytool -exportcert -alias release -keystore ./android/app/release.keystore | openssl sha1 -binary | openssl base64
+
+echo "5E:8F:16:06:2E:A3:CD:2C:4A:0D:54:78:76:BA:A6:F3:8C:AB:F6:25" | xxd -r -p | openssl base64
+echo "55:30:5D:F9:08:E6:7A:E6:53:FD:C6:7E:6F:C9:95:44:88:3C:5B:E9" | xxd -r -p | openssl base64
+
 ```
 
 ~~비밀번호는 주로 프로젝트명+A1! 로 하고있음~~
@@ -51,3 +59,6 @@ https://witdeal-002.members.markets/app/set/set.php
 김
 ororapf@naver.com
 +82-1661-0339
+
+apple team id
+C3N8GKX588

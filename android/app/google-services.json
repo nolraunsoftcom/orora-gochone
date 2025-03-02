@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "298149965153",
-    "project_id": "sinsungapt-b5d73",
-    "storage_bucket": "sinsungapt-b5d73.firebasestorage.app"
+    "project_number": "575466644369",
+    "project_id": "sinnamu-38962",
+    "storage_bucket": "sinnamu-38962.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:298149965153:android:c3b3b7cdf17a7ea62a2920",
+        "mobilesdk_app_id": "1:575466644369:android:420e3061a3a867840ab030",
         "android_client_info": {
-          "package_name": "com.orora.sinsungapt"
+          "package_name": "com.orora.sinnamu"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBDxuPPuwhWM4VWfDovj_wA8vPzuMWOOFM"
+          "current_key": "AIzaSyAhnthDhgt0wr6FSV2fSPuiKm7SFWhSrMY"
         }
       ],
       "services": {

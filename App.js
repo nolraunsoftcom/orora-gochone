@@ -16,8 +16,8 @@ import Geolocation from '@react-native-community/geolocation';
 import {displayNotification} from './src/utils/displayNotification';
 import notifee, {EventType} from '@notifee/react-native';
 
-const baseUrl = 'https://witdeal-002.members.markets';
-const andoridId = 'com.orora.sinsungapt';
+const baseUrl = 'https://witdeal-004.members.markets';
+const andoridId = 'com.orora.sinnamu';
 const iosId = '6739556274';
 
 export default function App() {
@@ -307,7 +307,6 @@ export default function App() {
           messaging()
             .getToken()
             .then(async token => {
-              console.log('token', token);
               myWebWiew.current.injectJavaScript(`
           localStorage.setItem('pushid', '${token}');
           window.isWebview = true;
