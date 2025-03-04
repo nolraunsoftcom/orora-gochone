@@ -18,7 +18,7 @@ import notifee, {EventType} from '@notifee/react-native';
 
 const baseUrl = 'https://witdeal-004.members.markets';
 const andoridId = 'com.orora.sinnamu';
-const iosId = '6739556274';
+const iosId = '6742697837';
 
 export default function App() {
   const myWebWiew = useRef();
