@@ -537,7 +537,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = C3N8GKX588;
 				ENABLE_BITCODE = NO;
@@ -578,7 +578,7 @@
 				CODE_SIGN_ENTITLEMENTS = pungmuprugio/pungmuprugioRelease.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = C3N8GKX588;
 				INFOPLIST_FILE = pungmuprugio/Info.plist;
@@ -597,7 +597,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.orora.minrack;
 				PRODUCT_NAME = pungmuprugio;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = sinnamu_prod;
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = minrack_prod;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

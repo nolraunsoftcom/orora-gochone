@@ -43,8 +43,8 @@ echo "55:30:5D:F9:08:E6:7A:E6:53:FD:C6:7E:6F:C9:95:44:88:3C:5B:E9" | xxd -r -p |
 ---
 
 윗딜브로스 모바일웹
-https://witdeal-bros.members.markets/app/set/privacy.php
-https://witdeal-bros.members.markets/app/set/set.php
+https://witdeal-005.members.markets/app/set/privacy.php
+https://witdeal-005.members.markets/app/set/set.php
 
 태성
 김
