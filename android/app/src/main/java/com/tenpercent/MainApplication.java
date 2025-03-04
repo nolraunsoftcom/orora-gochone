@@ -1,4 +1,4 @@
-package com.orora.sinnamu;
+package com.orora.minrack;
 
 
 

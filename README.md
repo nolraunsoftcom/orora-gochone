@@ -46,15 +46,6 @@ echo "55:30:5D:F9:08:E6:7A:E6:53:FD:C6:7E:6F:C9:95:44:88:3C:5B:E9" | xxd -r -p |
 https://witdeal-bros.members.markets/app/set/privacy.php
 https://witdeal-bros.members.markets/app/set/set.php
 
-윗딜셀러 모바일웹
-https://witdeal-seller.members.markets/app/set/privacy.php
-https://witdeal-seller.members.markets/app/set/set.php
-
-윗딜영통신성 모바일웹
-https://witdeal-002.members.markets
-https://witdeal-002.members.markets/app/set/privacy.php
-https://witdeal-002.members.markets/app/set/set.php
-
 태성
 김
 ororapf@naver.com

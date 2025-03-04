@@ -542,7 +542,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = C3N8GKX588;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = pungmuprugio/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "신나무실 주공5";
+				INFOPLIST_KEY_CFBundleDisplayName = "민락 금강&휴스";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -554,7 +554,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.orora.sinnamu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orora.minrack;
 				PRODUCT_NAME = pungmuprugio;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = sinnamu_dev;
@@ -582,7 +582,7 @@
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = C3N8GKX588;
 				INFOPLIST_FILE = pungmuprugio/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "신나무실 주공5";
+				INFOPLIST_KEY_CFBundleDisplayName = "민락 금강&휴스";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -594,7 +594,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.orora.sinnamu;
+				PRODUCT_BUNDLE_IDENTIFIER = com.orora.minrack;
 				PRODUCT_NAME = pungmuprugio;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = sinnamu_prod;

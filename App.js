@@ -17,8 +17,8 @@ import {displayNotification} from './src/utils/displayNotification';
 import notifee, {EventType} from '@notifee/react-native';
 
 const baseUrl = 'https://witdeal-004.members.markets';
-const andoridId = 'com.orora.sinnamu';
-const iosId = '6742697837';
+const andoridId = 'com.orora.minrack';
+const iosId = '6742785938';
 
 export default function App() {
   const myWebWiew = useRef();

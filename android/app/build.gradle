@@ -74,9 +74,9 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.orora.sinnamu"
+    namespace "com.orora.minrack"
     defaultConfig {
-        applicationId "com.orora.sinnamu"
+        applicationId "com.orora.minrack"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 2
