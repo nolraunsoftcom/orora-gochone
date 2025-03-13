@@ -16,7 +16,7 @@ import Geolocation from '@react-native-community/geolocation';
 import {displayNotification} from './src/utils/displayNotification';
 import notifee, {EventType} from '@notifee/react-native';
 
-const baseUrl = 'https://witdeal-005.members.markets';
+const baseUrl = 'https://witdeal-006.members.markets';
 const andoridId = 'com.orora.gochon'; // 고촌
 const iosId = '6743215995'; // 고촌
 
