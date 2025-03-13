@@ -17,8 +17,8 @@ import {displayNotification} from './src/utils/displayNotification';
 import notifee, {EventType} from '@notifee/react-native';
 
 const baseUrl = 'https://witdeal-005.members.markets';
-const andoridId = 'com.orora.minrack';
-const iosId = '6742785938';
+const andoridId = 'com.orora.gochon'; // 고촌
+const iosId = '6743215995'; // 고촌
 
 export default function App() {
   const myWebWiew = useRef();
@@ -296,6 +296,8 @@ export default function App() {
         sharedCookiesEnabled={true}
         thirdPartyCookiesEnabled={true}
         mediaPlaybackRequiresUserAction={false}
+        textZoom={100}
+        contentMode="mobile"
         allowsInlineMediaPlayback={true}
         injectedJavaScript={``}
         androidHardwareAccelerationDisabled={true}
