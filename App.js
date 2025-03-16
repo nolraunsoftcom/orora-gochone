@@ -348,14 +348,14 @@ export default function App() {
           myWebWiew.current?.reload();
         }}
       />
-      <Button
+      {/* <Button
         title="test"
         onPress={() => {
           myWebWiew.current.injectJavaScript(`
           window.ReactNativeWebView.postMessage(JSON.stringify({key: 'LINK', value: 'https://www.google.com'}));
         `);
         }}
-      />
+      /> */}
       <StatusBar
         animated={true}
         backgroundColor="white"
