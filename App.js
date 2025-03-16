@@ -7,6 +7,7 @@ import {
   SafeAreaView,
   StatusBar,
   Alert,
+  Button,
 } from 'react-native';
 import {PERMISSIONS, request, requestMultiple} from 'react-native-permissions';
 import SplashScreen from 'react-native-splash-screen';
@@ -100,6 +101,22 @@ export default function App() {
     // 객체를 JSON 문자열로 변환하여 출력
     try {
       const parsedObject = JSON.parse(event.nativeEvent.data);
+
+      try {
+        if (
+          typeof parsedObject === 'object' &&
+          !Array.isArray(parsedObject) &&
+          parsedObject.key === 'LINK' &&
+          parsedObject.value
+        ) {
+          const newsourceUrl = parsedObject.value;
+
+          Linking.openURL(newsourceUrl);
+          return;
+        }
+      } catch (e) {
+        console.Console(e);
+      }
 
       const MemberId = parsedObject[0];
       const local_info = parsedObject[1];
@@ -329,6 +346,14 @@ export default function App() {
         }}
         onContentProcessDidTerminate={() => {
           myWebWiew.current?.reload();
+        }}
+      />
+      <Button
+        title="test"
+        onPress={() => {
+          myWebWiew.current.injectJavaScript(`
+          window.ReactNativeWebView.postMessage(JSON.stringify({key: 'LINK', value: 'https://www.google.com'}));
+        `);
         }}
       />
       <StatusBar
