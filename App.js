@@ -114,6 +114,15 @@ export default function App() {
           Linking.openURL(newsourceUrl);
           return;
         }
+
+        if (
+          typeof parsedObject === 'object' &&
+          !Array.isArray(parsedObject) &&
+          parsedObject.key === 'SETTING'
+        ) {
+          Linking.openSettings();
+          return;
+        }
       } catch (e) {
         console.Console(e);
       }
@@ -313,7 +322,7 @@ export default function App() {
         sharedCookiesEnabled={true}
         thirdPartyCookiesEnabled={true}
         mediaPlaybackRequiresUserAction={false}
-        textZoom={100}
+        textZoom={92}
         contentMode="mobile"
         allowsInlineMediaPlayback={true}
         injectedJavaScript={``}
