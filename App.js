@@ -16,13 +16,14 @@ import VersionCheck from 'react-native-version-check';
 import Geolocation from '@react-native-community/geolocation';
 import {displayNotification} from './src/utils/displayNotification';
 import notifee, {EventType} from '@notifee/react-native';
+import Share from 'react-native-share';
+import RefreshController from './src/refreshController';
 
 const baseUrl = 'https://witdeal-006.members.markets';
 const andoridId = 'com.orora.gochon'; // 고촌
 const iosId = '6743215995'; // 고촌
 
-export default function App() {
-  const myWebWiew = useRef();
+const Webview = ({myWebWiew, onScroll = () => {}}) => {
   const [sourceUrl, setsourceUrl] = useState(baseUrl);
   const [pays, setpays] = useState([
     'supertoss://',
@@ -121,6 +122,15 @@ export default function App() {
           parsedObject.key === 'SETTING'
         ) {
           Linking.openSettings();
+          return;
+        }
+
+        if (
+          typeof parsedObject === 'object' &&
+          !Array.isArray(parsedObject) &&
+          parsedObject.key === 'SHARE'
+        ) {
+          await Share.open(parsedObject?.value);
           return;
         }
       } catch (e) {
@@ -315,6 +325,7 @@ export default function App() {
     <SafeAreaView style={{flex: 1}}>
       <WebView
         javaScriptEnabled={true}
+        onScroll={onScroll}
         style={{flex: 1}}
         ref={myWebWiew}
         originWhitelist={['*']}
@@ -326,6 +337,7 @@ export default function App() {
         contentMode="mobile"
         allowsInlineMediaPlayback={true}
         injectedJavaScript={``}
+        pullToRefreshEnabled={true}
         androidHardwareAccelerationDisabled={true}
         onShouldStartLoadWithRequest={event => {
           return onShouldStartLoadWithRequest(event);
@@ -361,7 +373,7 @@ export default function App() {
         title="test"
         onPress={() => {
           myWebWiew.current.injectJavaScript(`
-          window.ReactNativeWebView.postMessage(JSON.stringify({key: 'LINK', value: 'https://www.google.com'}));
+          window.ReactNativeWebView.postMessage(JSON.stringify({key: 'SHARE', value: {url: 'https://www.google.com'}}));
         `);
         }}
       /> */}
@@ -373,5 +385,16 @@ export default function App() {
         barStyle="dark-content"
       />
     </SafeAreaView>
+  );
+};
+
+export default function App() {
+  const myWebWiew = useRef();
+  return Platform.OS === 'ios' ? (
+    <Webview myWebWiew={myWebWiew} />
+  ) : (
+    <RefreshController webviewRef={myWebWiew}>
+      <Webview myWebWiew={myWebWiew} />
+    </RefreshController>
   );
 }
